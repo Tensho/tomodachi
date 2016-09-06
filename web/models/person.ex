@@ -4,6 +4,7 @@ defmodule Tomodachi.Person do
   schema "people" do
     field :name, :string
     field :age, :integer
+    has_many :hobbies, Tomodachi.Hobby
 
     timestamps()
   end
